@@ -12,14 +12,16 @@ namespace C_Sharp_HW_06_Anton_Golovash_15._10._2022
     {
         static void Main(string[] args)
         {
-            Ellips ellips = new Ellips();
-            Krug krug = new Krug();
-            Kvadrat kvadrat = new Kvadrat();
-            Parallelogramm parallelogramm = new Parallelogramm();
-            Priamougolnik priamougolnik = new Priamougolnik();
-            Romb romb = new Romb();
-            Trapecia trapecia = new Trapecia();
-            Treugolnik treugolnik = new Treugolnik ();
+            IProstoyNUgolnik ellips = new Ellips();
+            ellips.Ploshad();
+
+            IProstoyNUgolnik krug = new Krug();
+            IProstoyNUgolnik kvadrat = new Kvadrat();
+            IProstoyNUgolnik parallelogramm = new Parallelogramm();
+            IProstoyNUgolnik priamougolnik = new Priamougolnik();
+            IProstoyNUgolnik romb = new Romb();
+            IProstoyNUgolnik trapecia = new Trapecia();
+            IProstoyNUgolnik treugolnik = new Treugolnik ();
         }
     }
 }

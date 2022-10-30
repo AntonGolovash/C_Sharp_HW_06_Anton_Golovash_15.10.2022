@@ -6,41 +6,17 @@ using System.Threading.Tasks;
 
 namespace C_Sharp_HW_06_Classes_Anton_Golovash_15._10._2022
 {
-    public class SostvnayaFigura : IProstoyNUgolnik
+    public class SostavnayaFigura
     {
-        public double DlinyStoron()
+        public static double PloshadSostavnoyFigury(List<IProstoyNUgolnik> figuras)
         {
-            throw new NotImplementedException();
+            double ploshad = 0;
+            foreach (var item in figuras)
+            {
+                ploshad += item.Ploshad();
+            }
+            return ploshad;
         }
 
-        public int KolichestvoStoron()
-        {
-            throw new NotImplementedException();
-        }
-
-        public double Osnovanie()
-        {
-            throw new NotImplementedException();
-        }
-
-        public double Perimetr()
-        {
-            throw new NotImplementedException();
-        }
-
-        public double Ploshad()
-        {
-            throw new NotImplementedException();
-        }
-
-        public double UgolMeghduOsnovaniemISmeghnoyStoronoy()
-        {
-            throw new NotImplementedException();
-        }
-
-        public double Vysota()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
